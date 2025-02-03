@@ -1,38 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
-html {
+body {
   background: #1F0322;
   width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 main {
-  gap: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem 7rem;
+  gap: 3rem;
 
   .description {
     display: flex;
     flex-direction: column;
     width: 20rem;
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: Krona One;
     color: #177E89;
-    gap: 1rem;
+    gap: 1.5rem;
 
+    h1 {
+      padding-top: .5rem;
+    }
     strong {
       color: #B0BEA9;
     }
 
     p {
-      font-size: 1.1rem;
+      font-family: Montserrat;
+      font-size: .8rem;
     }
 
-    .buttons {
+    .enlaces {
       display: flex;
       gap: 1rem;
     }
@@ -43,7 +51,7 @@ main {
       border: .5px solid #B0BEA9;
       background: #F1F7EE;
       gap: 1rem;
-      padding: .5rem;
+      padding: .7rem;
       display: flex;
       justify-content: center;
       color: #084C61;
