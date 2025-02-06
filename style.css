@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --color-primary: #177E89;
+  --color-secondary: #B0BEA9;
+  --color-tertiary: #F1F7EE;
+  --color-quaternary: #1F0322;
+
+  --fuente-principal: 'Krona One', cursive;
+  --fuente-secundaria: 'Montserrat', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +22,7 @@ html body{
 }
 
 body {
-  background: #1F0322;
+  background: var(--color-quaternary);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,17 +37,17 @@ body {
 
       a {
         color: #084C61;
-        font-family: Montserrat;
+        font-family: var(--fuente-secundaria);
         font-weight: 800;
         text-decoration: none;
     
         &:hover {
-          color: #B0BEA9;
+          color: var(--color-secondary);
         }
       }
 
       .active {
-        color: #B0BEA9;
+        color: var(--color-secondary);
       }
     }
   }
@@ -56,8 +66,8 @@ body {
       align-items: center;
       width: 50%;
       font-size: .8rem;
-      font-family: Krona One;
-      color: #177E89;
+      font-family: var(--fuente-principal);
+      color: var(--color-primary);
       gap: 1.5rem;
   
       h1 {
@@ -72,11 +82,11 @@ body {
       }
   
       strong {
-        color: #B0BEA9;
+        color: var(--color-secondary);
       }
   
       p {
-        font-family: Montserrat;
+        font-family: var(--fuente-secundaria);
         font-size: .9rem;
         line-height: 1.5;
       }
@@ -90,22 +100,22 @@ body {
   
       a {
         border-radius: .26rem;
-        border: .5px solid #177E89;
-        background: #1F0322;
+        border: .5px solid var(--color-primary);
+        background: var(--color-quaternary);
         gap: .8rem;
         padding: .7rem;
         display: flex;
         justify-content: center;
-        color: #B0BEA9;
-        font-family: Montserrat;
+        color: var(--color-secondary);
+        font-family: var(--fuente-secundaria);
         font-size: 1rem;
         font-weight: 600;
         text-decoration: none;
         align-items: center;
   
         &:hover {
-          color: #177E89;
-          background: #F1F7EE;
+          color: var(--color-primary);
+          background: var(--color-tertiary);
         }
       }
 
@@ -115,7 +125,7 @@ body {
 
         h2 {
           padding-bottom: .3rem;
-          color: #B0BEA9;
+          color: var(--color-secondary);
         }
 
         .habilidades {
@@ -131,12 +141,12 @@ body {
           justify-content: space-between;
   
           li {
-            border-top: #177E89 1px solid;
+            border-top: var(--color-primary) 1px solid;
             padding: .5rem 0;
             font-size: larger;
-            font-family: Montserrat;
+            font-family: var(--fuente-secundaria);
             i {
-              color: #B0BEA9;
+              color: var(--color-secondary);
             }
           }
         }
@@ -149,7 +159,7 @@ body {
       width: 20rem;
       height: 22rem;
       border-radius: 1rem;
-      border: 2px solid #B0BEA9;
+      border: 2px solid var(--color-secondary);
   
       .perfil {
         position: absolute;
@@ -167,20 +177,11 @@ body {
       }
     }
 
-    .perfil__cv {
+    .figure__cv {
       view-transition-name: perfil;
-      position: relative;
       width: 11rem;
       height: 12rem;
-      border-radius: 1rem;
-      border: 2px solid #B0BEA9;
       align-self: flex-start;
-  
-      .estrella {
-        position: absolute;
-        top: -1rem;
-        right: -1rem;
-      }
     }
   }
 
@@ -189,11 +190,11 @@ body {
     text-align: center;
     font-size: .8rem;
     font-weight: 400;
-    font-family: Montserrat;
-    color: #177E89;
+    font-family: var(--fuente-secundaria);
+    color: var(--color-primary);
     margin-top: 2rem;
     padding: 1rem;
-    background: #F1F7EE;
+    background: var(--color-tertiary);
   }
 }
 
@@ -215,12 +216,3 @@ body {
 @view-transition {
   navigation: auto;
 }
-
-/**
- * Background #1F0322
- * Background2 #F1F7EE
- * text #177E89
- * text2 #084C61
- * border #B0BEA9
-**/
-
